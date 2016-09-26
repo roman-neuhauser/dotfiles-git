@@ -1,0 +1,36 @@
+[user]
+	name = Roman Neuhauser
+	email = neuhauser@sigpipe.cz
+
+[core]
+  pager = less
+
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  ui = auto
+
+[alias]
+  bi = bisect
+  br = branch
+  cd = diff --cached
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  di = diff
+  ff = merge --ff-only
+  id = !git symbolic-ref -q --short ${1-HEAD}
+  reb = rebase
+  st = status -s
+
+[merge]
+  # add summary to merge commit message (eg. when merging master->staging)
+  summary = true
+
+[branch "master"]
+  # always rebase master when pulling - no more annoying merge commits!
+  rebase = true
+
+[push]
+  default = current

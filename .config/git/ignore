@@ -1,0 +1,11 @@
+log
+.Xauthority
+.cache
+.osc_cookiejar
+.viminfo
+.zcompdump
+
+.*history
+*.log
+.sw?
+.*.sw?
